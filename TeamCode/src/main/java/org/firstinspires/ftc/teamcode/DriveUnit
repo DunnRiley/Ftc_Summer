@@ -1,0 +1,30 @@
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.HardwareMap;
+
+public class DriveUnit{
+
+    double gearRatio;
+    double weelDiamiter;
+    double moterPower;
+    HardwareMap hardwareMap;
+    DcMotor Moter;
+    String diviceName;
+
+    public DriveUnit(double gearRatio, double weelDiamiter, String diviceName,HardwareMap hardwareMap){
+
+        this.gearRatio = gearRatio;
+        this.moterPower = moterPower;
+        this.weelDiamiter = weelDiamiter;
+        this.hardwareMap = hardwareMap;
+
+    }
+    public void init(){
+        Moter = hardwareMap.get(DcMotor.class, diviceName);
+    }
+    public void setPower(double moterPower){
+
+    }
+
+}
